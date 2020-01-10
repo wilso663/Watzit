@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './styles.css'
 
-export default function Card({handleClick, id, type, flipped, height, width, disabled})
+export default function Card({handleClick, id, type, flipped, height, width, disabled, solved})
 {
   return( 
     <div className={`flip-container ${flipped ? 'flipped' : ''}`}
@@ -14,11 +14,12 @@ export default function Card({handleClick, id, type, flipped, height, width, dis
     >
         <div className='flipper'>
           <img 
+            alt="Memory Game Card"
             style={{
               height, width
             }}
             className={flipped ? 'front' : 'back'}
-            src={flipped ? `/img/${type}.png` : `/img/node-js.png` }
+            src={flipped || solved ? `/img/${type}.png` : `/img/node-js.png` }
           />
         </div>
       
@@ -31,6 +32,7 @@ Card.propTypes = {
   handleClick: PropTypes.func.isRequired,
   id: PropTypes.number.isRequired,
   flipped: PropTypes.bool.isRequired,
+  solved: PropTypes.bool.isRequired,
   type: PropTypes.string.isRequired,
   height: PropTypes.number.isRequired,
   width: PropTypes.number.isRequired

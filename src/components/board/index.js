@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Card from '../card';
 import './styles.css'
 
-export default function Board({ cards, dimension, flipped, handleClick, disabled })
+export default function Board({ cards, dimension, flipped, handleClick, disabled, solved })
 {
   return (
     <div className='board'>
@@ -18,7 +18,8 @@ export default function Board({ cards, dimension, flipped, handleClick, disabled
             height={dimension / 4.5}
             flipped={flipped.includes(card.id)}
             handleClick={handleClick}
-            disabled={disabled}
+            disabled={disabled || solved.includes(card.id)}
+            solved={solved.includes(card.id)}
           />
         ))
       }
