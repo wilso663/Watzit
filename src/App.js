@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Board from './components/board';
 import initializeDeck from './deck';
 
@@ -9,6 +9,10 @@ function App() {
   const [solved, setSolved] = useState([])
   const [disabled, setDisabled] = useState(false)
   const [gameOver, setGameOver] = useState(false)
+  const [timeoutGameOver, setTimeoutGameOver] = useState(null)
+
+  const gameOverRef = useRef(gameOver)
+  gameOverRef.current = gameOver
 
   useEffect(() => {
     resizeBoard()
@@ -19,6 +23,12 @@ function App() {
     const resizeListener = window.addEventListener('resize', resizeBoard)
     return () => window.removeEventListener('resize', resizeListener)
   })
+
+  const getGameOverTimeout = () => {
+    setTimeout(() => {
+      setTimeoutGameOver(gameOverRef.current)
+    }, 2000)
+  }
 
   const resetDeck = () => {
     setCards([])
@@ -36,17 +46,18 @@ function App() {
       if(sameCardClicked(id)) return;
       setFlipped([flipped[0], id]);
       if(isMatch(id) && solved.length === 14){
-        setSolved([...solved, flipped[0], id])
-        resetCards()
         setGameOver(true)
-        setTimeout(setGameOver(false), 1000)
-        resetDeck()
+        setSolved([...solved, flipped[0], id])
+        setTimeout(function() {
+          resetDeck()
+          resetGameOver()
+        }, 3000)
       }
       else if(isMatch(id)){
         setSolved([...solved, flipped[0], id])
         resetCards()
       } else {
-        setTimeout(resetCards, 1000)
+        setTimeout(resetCards, 800)
       }
     }
   }
@@ -56,6 +67,9 @@ function App() {
     setDisabled(false)
   }
 
+  const resetGameOver = () => {
+    setGameOver(false)
+  }
   const isMatch = (id) => {
     const clickedCard = cards.find((card) => card.id === id)
     const flippedCard = cards.find((card) => flipped[0] === card.id)
@@ -76,7 +90,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Memory</h1>
+      <h1>Memory Game</h1>
       <h2>Can you remember where the cards are?</h2>
       <Board 
         dimension={dimension}
