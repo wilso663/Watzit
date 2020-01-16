@@ -1,4 +1,4 @@
-## Watzit? Memory Game
+### Watzit? Memory Game
 
 
 ## What is it?
@@ -8,11 +8,11 @@ As a React project, I aimed to use hook functional methods for useState and useE
 componentDidMount and componentDidUpdate methods.
 
 ## Rules
-Only two cards can be flipped over at a time. 
-Flipping over two cards that aren't a match will reset them to their face down position. 
-Flipping over two cards that match will keep them in their face up position. 
-The objective is to get all of the cards to face up by remembering where the face down card matches occur.  
-Find all of the matches to win.
+Only two cards can be flipped over at a time.    
+Flipping over two cards that aren't a match will reset them to their face down position.   
+Flipping over two cards that match will keep them in their face up position.   
+The objective is to get all of the cards to face up by remembering where the face down card matches occur.    
+Find all of the matches to win.  
 
 ## Usage
 The game is designed to run in all modern browsers, also including Microsoft Edge. Just visit the app page at: 
