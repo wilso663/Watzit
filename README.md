@@ -4,7 +4,7 @@
 ## What is it?
 The Watzit? Memory Game is a small memory card game where you try to match card face pairs by flipping over the watzit cards. 
 Originally, this react project was created as an exercise for myself to become more familiar with event bubbling and React Lifecycle methods as well as css animations.
-As a React project, I aimed to use hook functional methods for useState and useEffect since they were new concepts to me. My previous react experience revolved around
+As this is a React project, I aimed to use hook functional methods for useState and useEffect since they were new concepts to me. My previous React experience revolved around
 componentDidMount and componentDidUpdate methods.
 
 ## Rules
@@ -31,4 +31,4 @@ https://www.iconfinder.com/iconfinder
 Please visit their profile on iconfinder if you would like to reference or use any of their works.
 
 ## Known Bugs
-There is currently a bug where finding a match reflips the currently flipped card and not the second flipped card.
+There is currently a bug where finding a match replays the flip animation for the currently flipped card and not the second flipped card.
