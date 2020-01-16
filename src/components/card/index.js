@@ -19,7 +19,7 @@ export default function Card({handleClick, id, type, flipped, height, width, dis
               height, width
             }}
             className={flipped ? 'front' : 'back'}
-            src={flipped || solved ? `/img/${type}.png` : `/img/node-js.png` }
+            src={flipped || solved ? `/img/${type}.png` : `/img/CardBack.png` }
           />
         </div>
       

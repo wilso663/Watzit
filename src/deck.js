@@ -16,7 +16,7 @@ export default function initializeDeck()
 {
   let id = 0;
   //Create two instances of every card
-  const cards = ['react','redux', 'angular','aws','firebase','rails','ruby','vue'].reduce((acc, type) => {
+  const cards = ['react','redux', 'angular','aws','firebase','node-js','ruby','vue'].reduce((acc, type) => {
     acc.push({
       id: id++,
       type
