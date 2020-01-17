@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Watzit/precache-manifest.b89c4305f3b608fe2aad1aa5f530434d.js"
+  "/Watzit/precache-manifest.8469379626ce0365ff438614b3d9aaf1.js"
 );
 
 self.addEventListener('message', (event) => {

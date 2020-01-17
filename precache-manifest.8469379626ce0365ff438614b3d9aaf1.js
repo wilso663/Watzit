@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "377b550323779521e34be06f8418f024",
+    "revision": "15613a17604713238904f8f4fb14c8b7",
     "url": "/Watzit/index.html"
   },
   {
-    "revision": "d2560725be726bb6e992",
+    "revision": "c80843483d20778b8e76",
     "url": "/Watzit/static/css/main.322d5dc5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Watzit/static/js/2.8ad82417.chunk.js.LICENSE"
   },
   {
-    "revision": "d2560725be726bb6e992",
-    "url": "/Watzit/static/js/main.0cea30da.chunk.js"
+    "revision": "c80843483d20778b8e76",
+    "url": "/Watzit/static/js/main.d568857d.chunk.js"
   },
   {
     "revision": "c764eee7daaf6e0d7ab3",
