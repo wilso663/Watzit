@@ -15,7 +15,7 @@ The objective is to get all of the cards to face up by remembering where the fac
 Find all of the matches to win.  
 
 ## Usage
-The game is designed to run in all modern browsers, also including Microsoft Edge. Just visit the app page at: 
+The game is designed to run in all modern browsers, also including Microsoft Edge. Just visit the app page at: https://wilso663.github.io/Watzit/
 to play the app game.
 
 ## Licensing
@@ -29,6 +29,7 @@ https://www.iconfinder.com/aha-soft
 https://www.iconfinder.com/iconfinder  
   
 Please visit their profile on iconfinder if you would like to reference or use any of their works.
+The repository code is free for redistribution and editing.
 
 ## Known Bugs
 There is currently a bug where finding a match replays the flip animation for the currently flipped card and not the second flipped card.
