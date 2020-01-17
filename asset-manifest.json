@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Watzit/static/css/main.322d5dc5.chunk.css",
+    "main.js": "/Watzit/static/js/main.0cea30da.chunk.js",
+    "main.js.map": "/Watzit/static/js/main.0cea30da.chunk.js.map",
+    "runtime-main.js": "/Watzit/static/js/runtime-main.ae9f95f0.js",
+    "runtime-main.js.map": "/Watzit/static/js/runtime-main.ae9f95f0.js.map",
+    "static/js/2.8ad82417.chunk.js": "/Watzit/static/js/2.8ad82417.chunk.js",
+    "static/js/2.8ad82417.chunk.js.map": "/Watzit/static/js/2.8ad82417.chunk.js.map",
+    "index.html": "/Watzit/index.html",
+    "precache-manifest.b89c4305f3b608fe2aad1aa5f530434d.js": "/Watzit/precache-manifest.b89c4305f3b608fe2aad1aa5f530434d.js",
+    "service-worker.js": "/Watzit/service-worker.js",
+    "static/css/main.322d5dc5.chunk.css.map": "/Watzit/static/css/main.322d5dc5.chunk.css.map",
+    "static/js/2.8ad82417.chunk.js.LICENSE": "/Watzit/static/js/2.8ad82417.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae9f95f0.js",
+    "static/js/2.8ad82417.chunk.js",
+    "static/css/main.322d5dc5.chunk.css",
+    "static/js/main.0cea30da.chunk.js"
+  ]
+}
